@@ -1,24 +1,23 @@
 import { v4 as uuidv4 } from 'uuid';
 import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
 import CoinTrackerImg from '../images/cointracker.jpg';
 import CavinImg from '../images/cavinimg.jpg';
+import Symfony from '../images/symfony.png';
+import ReactJS from '../images/logo-react-js.png';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
+    name: 'Gestion hopital Symfony',
     desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+      "Application de gestion d'un hopital réalisé avec Symfony 5 et react.js",
+    img: Symfony,
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
-    desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+    name: 'Portfolio react.js',
+    desc: "Création d'un portfolio en react.js",
+    img: ReactJS,
   },
   {
     id: uuidv4(),

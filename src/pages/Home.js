@@ -3,7 +3,6 @@ import HeroSection from '../components/HeroSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactBanner from '../components/Contactbanner';
-import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -12,7 +11,6 @@ function Home() {
       <SkillsSection />
       <ProjectsSection />
       <ContactBanner />
-      <Footer />
     </div>
   );
 }
