@@ -121,7 +121,7 @@ function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>© 2021 Florimond Jaulin </PText>
+          <PText>© 2021 Florimond Jaulin | Tous droits réservés</PText>
         </div>
       </div>
     </FooterStyles>
