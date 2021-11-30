@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MdSearch } from 'react-icons/all';
-import { Link } from 'react-router-dom';
 import SectionTitle from '../components/SectionTitle';
 import ProjectItem from '../components/ProjectItem';
 import ProjectInfo from '../assets/data/projects';
-import Project from './Project';
 
 const ProjectsStyles = styled.div`
   padding: 10rem 0;
@@ -66,10 +64,6 @@ function Projects() {
       setProjectData(ProjectInfo);
     }
   }
-
-  function openInNewTab() {
-    console.log('lala');
-  }
   return (
     <ProjectsStyles>
       <div className="container">
@@ -80,28 +74,19 @@ function Projects() {
               type="text"
               value={searchText}
               onChange={handleChange}
-              placeholder="Project.js Name"
+              placeholder="Project Name"
             />
             <MdSearch className="searchIcon" />
           </form>
         </div>
-
         <div className="projects__allItems">
           {projectData.map((item) => (
-            <Link
-              to={{
-                pathname: '/project',
-                projectProps: { project: item },
-              }}
-              key={`project${item.id}`}
-            >
-              <ProjectItem
-                key={item.id}
-                title={item.name}
-                img={item.img}
-                desc={item.shortDesc}
-              />
-            </Link>
+            <ProjectItem
+              key={item.id}
+              title={item.name}
+              img={item.img}
+              desc={item.desc}
+            />
           ))}
         </div>
       </div>
