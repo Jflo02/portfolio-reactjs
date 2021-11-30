@@ -38,19 +38,19 @@ const ProjectItemStyles = styled.div`
 
 function ProjectItem({
   img = projectImg,
-  title = 'Project Name',
+  title = 'Project.js Name',
   desc = 'lorem',
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
+      <div className="projectItem__img">
         {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
         <img src={img} alt="project image" />
-      </Link>
+      </div>
       <div className="projectItem__info">
-        <Link to="#">
-          <h3 className="projectItem__title">{title}</h3>
-        </Link>
+        {/* <Link to="#"> */}
+        <h3 className="projectItem__title">{title}</h3>
+        {/* </Link> */}
         <p className="projectItem__desc">{desc}</p>
       </div>
     </ProjectItemStyles>

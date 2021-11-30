@@ -7,6 +7,7 @@ import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import ExcelBtsSheet from './components/ExcelBtsSheet';
+import Project from './pages/Project';
 
 export default function App() {
   return (
@@ -16,6 +17,9 @@ export default function App() {
         <Switch>
           <Route path="/projects">
             <Projects />
+          </Route>
+          <Route path="/project" component={Project}>
+            {/* <Project /> */}
           </Route>
           <Route path="/skills">
             <Skills />
