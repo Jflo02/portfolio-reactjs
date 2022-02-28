@@ -43,14 +43,12 @@ function ProjectItem({
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
+      <div className="projectItem__img">
         {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
         <img src={img} alt="project image" />
-      </Link>
+      </div>
       <div className="projectItem__info">
-        <Link to="#">
-          <h3 className="projectItem__title">{title}</h3>
-        </Link>
+        <h3 className="projectItem__title">{title}</h3>
         <p className="projectItem__desc">{desc}</p>
       </div>
     </ProjectItemStyles>

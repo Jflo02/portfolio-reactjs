@@ -59,10 +59,8 @@ function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Florimond Jaulin</h1>
           <PText>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aspernatur, consectetur fugiat fugit iste modi totam voluptate.
-            Consequatur molestias officia unde vel voluptas. Fugiat, nisi quas!
-            Est laborum repudiandae tempora voluptatibus.
+            Actuellement en deuxième année d'informatique je suis à la recherche
+            d'une alternance pour septembre 2022
           </PText>
         </div>
         <div className="footer__col2">
@@ -121,7 +119,7 @@ function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>© 2021 Florimond Jaulin | Tous droits réservés</PText>
+          <PText>© 2022 Florimond Jaulin | Tous droits réservés</PText>
         </div>
       </div>
     </FooterStyles>

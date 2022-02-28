@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import ExcelBtsSheet from './components/ExcelBtsSheet';
 import Project from './pages/Project';
+import Cv from './components/Cv';
 
 export default function App() {
   return (
@@ -27,6 +28,9 @@ export default function App() {
           </Route>
           <Route path="/skillssheet">
             <ExcelBtsSheet />
+          </Route>
+          <Route path="/cv">
+            <Cv />
           </Route>
           <Route path="/">
             <Home />
