@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MdSearch } from 'react-icons/all';
+import { Link } from 'react-router-dom';
 import SectionTitle from '../components/SectionTitle';
 import ProjectItem from '../components/ProjectItem';
 import ProjectInfo from '../assets/data/projects';
@@ -81,12 +82,20 @@ function Projects() {
         </div>
         <div className="projects__allItems">
           {projectData.map((item) => (
-            <ProjectItem
-              key={item.id}
-              title={item.name}
-              img={item.img}
-              desc={item.desc}
-            />
+            <Link
+              to={{
+                pathname: '/project',
+                state: item,
+              }}
+              key={`project${item.id}`}
+            >
+              <ProjectItem
+                key={item.id}
+                title={item.name}
+                img={item.miniature}
+                desc={item.desc}
+              />
+            </Link>
           ))}
         </div>
       </div>

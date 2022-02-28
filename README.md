@@ -1,5 +1,9 @@
-# React Portfolio website
+# React Portfolio 
 
-Designed by - [shaif Arfan](http://github.com/shaifarfan) | [web cifar](http://webcifar.com)
+How to run the projet:
 
-![](./ReadMeImages/ReadMeBanner.png)
+    npm start
+
+how to build the project:
+
+    npm run build

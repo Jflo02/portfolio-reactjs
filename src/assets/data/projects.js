@@ -11,34 +11,44 @@ const projects = [
     name: 'Gestion hopital Symfony',
     desc:
       "Application de gestion d'un hopital réalisé avec Symfony 5 et react.js",
-    img: Symfony,
+    miniature: Symfony,
+    img1: Symfony,
+    img2: Symfony,
   },
   {
     id: uuidv4(),
     name: 'Portfolio react.js',
     desc: "Création d'un portfolio en react.js",
-    img: ReactJS,
+    miniature: ReactJS,
+    img1: ReactJS,
+    img2: ReactJS,
   },
   {
     id: uuidv4(),
     name: 'Coin Tracker',
     desc:
       'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+    miniature: CoinTrackerImg,
+    img1: CoinTrackerImg,
+    img2: CoinTrackerImg,
   },
   {
     id: uuidv4(),
     name: "Cavin's Portfolio",
     desc:
       'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
+    miniature: CavinImg,
+    img1: CavinImg,
+    img2: CavinImg,
   },
   {
     id: uuidv4(),
     name: 'Tracking Soft',
     desc:
       'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+    miniature: ProjectImg,
+    img1: ProjectImg,
+    img2: ProjectImg,
   },
 ];
 
