@@ -92,7 +92,7 @@ function Projects() {
               <ProjectItem
                 key={item.id}
                 title={item.name}
-                img={item.miniature}
+                img={item.img}
                 desc={item.desc}
               />
             </Link>

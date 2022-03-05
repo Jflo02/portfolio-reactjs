@@ -76,9 +76,10 @@ function SkillsSection() {
             heading="About my skills"
           />
           <PText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            faucibus dictum elit, ut tristique dui lobortis nec. Morbi feugiat,
-            erat quis consequat dapibus, ex lorem sollicitudin metus, sit amet
+            Je suis à l'aise dans le développement web avec les technologies
+            React, le javascript. Je sais également utiliser Symfony. Je
+            m'intéresse au déploiement et notamment à travers de Docker sur
+            lequel je me suis formé.
           </PText>
           <div className="skillsSection__buttons">
             <Button btnLink="/skills" btnText="competences" outline />
