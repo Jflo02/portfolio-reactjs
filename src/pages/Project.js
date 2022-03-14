@@ -95,25 +95,25 @@ const ProjectStyles = styled.div`
 `;
 
 function Project(props) {
-  const [project, getProject, projectRef] = useState(
+  const [projectRef] = useState(
     // eslint-disable-next-line react/destructuring-assignment
     props.location.state || JSON.parse(localStorage.getItem('project'))
   );
-  const [btsSkills, setBtsSkills, btsSkillsRef] = useState(
-    projectRef.current.btsSkills
-  );
+  const [btsSkillsRef] = useState(projectRef.current.btsSkills);
 
   const setInLocalStorage = () => {
+    // eslint-disable-next-line react/destructuring-assignment
     if (props.location.state) {
       console.log('je met qql chose en réserve !');
+      // eslint-disable-next-line react/destructuring-assignment
       localStorage.setItem('project', JSON.stringify(props.location.state));
     }
   };
 
-  const GetFromLocalStorage = () => {
-    console.log('je prend qql chose en réserve !');
-    localStorage.setItem('project', JSON.stringify(project));
-  };
+  // const GetFromLocalStorage = () => {
+  //   console.log('je prend qql chose en réserve !');
+  //   localStorage.setItem('project', JSON.stringify(project));
+  // };
 
   const debug = () => {
     console.log(projectRef.current);
