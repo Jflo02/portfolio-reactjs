@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import excelCompetences from '../assets/images/excel-competences.png';
-import ExcelBtsSheet from '../components/ExcelBtsSheet';
 
 const SKillsStyles = styled.div`
   padding: 10rem 0;
