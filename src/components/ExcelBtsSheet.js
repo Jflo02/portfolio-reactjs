@@ -11,7 +11,6 @@ function ExcelBtsSheet() {
       <img src={excelCompetences} alt="competences bts" width="100px" />
     </ExcelBtsSheetStyle>
   );
-  // return <div>THis is an image</div>;
 }
 
 export default ExcelBtsSheet;
