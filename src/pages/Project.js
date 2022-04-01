@@ -94,18 +94,15 @@ const ProjectStyles = styled.div`
   }
 `;
 
-function Project(props) {
+function Project({ location }) {
   const [projectRef] = useState(
-    // eslint-disable-next-line react/destructuring-assignment
-    props.location.state || JSON.parse(localStorage.getItem('project'))
+    location.state || JSON.parse(localStorage.getItem('project'))
   );
   const [btsSkillsRef] = useState(projectRef.btsSkills);
 
   const setInLocalStorage = () => {
-    // eslint-disable-next-line react/destructuring-assignment
-    if (props.location.state) {
-      // eslint-disable-next-line react/destructuring-assignment
-      localStorage.setItem('project', JSON.stringify(props.location.state));
+    if (location.state) {
+      localStorage.setItem('project', JSON.stringify(location.state));
     }
   };
 
@@ -140,7 +137,7 @@ function Project(props) {
               </thead>
               <tbody>
                 {btsSkillsRef.map((skill) => (
-                  <tr>
+                  <tr key={skill.name}>
                     <td>{skill.name}</td>
                     <td>{skill.mission}</td>
                   </tr>

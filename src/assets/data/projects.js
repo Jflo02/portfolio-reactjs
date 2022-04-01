@@ -1,10 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
 import Symfony from '../images/symfony.png';
 import ReactJS from '../images/logo-react-js.png';
-import SymfonyTrello from '../images/trello-symfony.png';
+import test from '../images/test.jpg';
 
 const projects = [
   {
@@ -14,11 +11,11 @@ const projects = [
       "Application de gestion d'un hopital réalisé avec Symfony 5 et react.js",
     img: Symfony,
     longDesc:
-      "Dans le cadre de l'épreuve E4 j'ai réalisé une application de gestion d'hopital. J'ai pu avec mon équipe" +
-      "penser à la conception de l'application en utilisant des diagrammes de classe et états-transition ainsi qu'un" +
-      "MLD. J'ai développé la partie backend de l'application sous symfony 5 relié à une base de données Mysql hébergé" +
+      "Dans le cadre de l'épreuve E4 j'ai réalisé une application de gestion d'hopital. J'ai pu avec mon équipe " +
+      "penser à la conception de l'application en utilisant des diagrammes de classe et états-transition ainsi qu'un " +
+      "MLD. J'ai développé la partie backend de l'application sous symfony 5 relié à une base de données Mysql hébergé " +
       'sur un vps distant et conteneurisé avec docker.',
-    img1: SymfonyTrello,
+    img1: test,
     img2: Symfony,
     text1: 'lorem texte 1',
     text2: 'lorem texte 2',
@@ -65,7 +62,7 @@ const projects = [
     name: 'Coin Tracker',
     shortDesc:
       'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+    img: test,
     longDesc:
       'jbeb ibefihb zlihfbzl fbz kbzfblzb zlijbf lizjb flizsb liuzbfliujzsbfiu ',
     img1:
@@ -82,7 +79,7 @@ const projects = [
     name: "Cavin's Portfolio",
     shortDesc:
       'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
+    img: test,
     longDesc:
       'jbeb ibefihb zlihfbzl fbz kbzfblzb zlijbf lizjb flizsb liuzbfliujzsbfiu ',
     img1:
@@ -99,7 +96,7 @@ const projects = [
     name: 'Tracking Soft',
     shortDesc:
       'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+    img: test,
     longDesc:
       'jbeb ibefihb zlihfbzl fbz kbzfblzb zlijbf lizjb flizsb liuzbfliujzsbfiu ',
     img1:

@@ -23,7 +23,13 @@ function Skills() {
       <div className="container">
         <BtsSkillsInteractive />
         <div className="img__excel">
-          <Link to="/skillssheet" target="blank">
+          <Link
+            to={{
+              pathname: '/image',
+              state: { img: excelCompetences },
+            }}
+            key="lalal"
+          >
             <img src={excelCompetences} alt="competences bts" width="100px" />
           </Link>
         </div>

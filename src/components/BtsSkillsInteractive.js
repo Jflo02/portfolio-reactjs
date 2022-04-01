@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import skillsInfo from '../assets/data/skills';
 
 const BtsSkillsInteractiveStyle = styled.div`
   .container {
@@ -140,7 +142,8 @@ const BtsSkillsInteractiveStyle = styled.div`
               background-color: red;
               border-bottom: 3px solid var(--gray-2);
             }
-            a {
+            a,
+            .case {
               height: 15rem;
               background-color: black;
             }
@@ -193,15 +196,30 @@ function BtsSkillsInteractive() {
                   informatique <br />• Gérer des sauvegardes Vérifier le respect
                   des règles d’utilisation des ressources numériques
                 </p>
-                <a className="vert" href="/">
-                  <div className="cours" />
-                </a>
-                <a className="red" href="/">
-                  <div className="stageun" />
-                </a>
-                <a className="red" href="/">
-                  <div className="stagedeux" />
-                </a>
+                <Link
+                  to={{
+                    pathname: '/skill',
+                    state: skillsInfo[0],
+                  }}
+                  key="lal"
+                  className="vert"
+                />
+                <Link
+                  to={{
+                    pathname: '/skill',
+                    state: skillsInfo[1],
+                  }}
+                  key="lal"
+                  className="vert"
+                />
+                <Link
+                  to={{
+                    pathname: '/skill',
+                    state: 'item',
+                  }}
+                  key="lal"
+                  className="red"
+                />
               </div>
             </div>
           </div>

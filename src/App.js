@@ -4,9 +4,10 @@ import NavMenu from './components/NavMenu';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
+import Skill from './pages/Skill';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import ExcelBtsSheet from './components/ExcelBtsSheet';
+import ImageFullScreen from './components/ImageFullScreen';
 import Project from './pages/Project';
 import Cv from './components/Cv';
 
@@ -16,19 +17,18 @@ export default function App() {
       <Router>
         <NavMenu />
         <Switch>
+          <Route path="/project" component={Project} />
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/project" component={Project} />
+          <Route path="/skill" component={Skill} />
           <Route path="/skills">
             <Skills />
           </Route>
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/skillssheet">
-            <ExcelBtsSheet />
-          </Route>
+          <Route path="/image" component={ImageFullScreen} />
           <Route path="/cv">
             <Cv />
           </Route>
