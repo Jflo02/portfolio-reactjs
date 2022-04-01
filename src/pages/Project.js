@@ -94,29 +94,16 @@ const ProjectStyles = styled.div`
   }
 `;
 
-function Project(props) {
+function Project({ location }) {
   const [projectRef] = useState(
-    // eslint-disable-next-line react/destructuring-assignment
-    props.location.state || JSON.parse(localStorage.getItem('project'))
+    location.state || JSON.parse(localStorage.getItem('project'))
   );
-  const [btsSkillsRef] = useState(projectRef.current.btsSkills);
+  const [btsSkillsRef] = useState(projectRef.btsSkills);
 
   const setInLocalStorage = () => {
-    // eslint-disable-next-line react/destructuring-assignment
-    if (props.location.state) {
-      console.log('je met qql chose en réserve !');
-      // eslint-disable-next-line react/destructuring-assignment
-      localStorage.setItem('project', JSON.stringify(props.location.state));
+    if (location.state) {
+      localStorage.setItem('project', JSON.stringify(location.state));
     }
-  };
-
-  // const GetFromLocalStorage = () => {
-  //   console.log('je prend qql chose en réserve !');
-  //   localStorage.setItem('project', JSON.stringify(project));
-  // };
-
-  const debug = () => {
-    console.log(projectRef.current);
   };
 
   useEffect(setInLocalStorage);
@@ -125,23 +112,20 @@ function Project(props) {
     <ProjectStyles>
       <div className="container">
         <div className="title">
-          {debug()}
-          <h1>{projectRef.current.name}</h1>
+          <h1>{projectRef.name}</h1>
         </div>
-        <div className="description__generale">
-          {projectRef.current.longDesc}
-        </div>
+        <div className="description__generale">{projectRef.longDesc}</div>
         <div className="corps">
           <div className="line1">
-            <p>{projectRef.current.text1}</p>
-            <img src={projectRef.current.img1} alt="project 1" />
+            <p>{projectRef.text1}</p>
+            <img src={projectRef.img1} alt="project 1" />
           </div>
           <div className="line2">
-            <p>{projectRef.current.text2}</p>
+            <p>{projectRef.text2}</p>
           </div>
           <div className="line3">
-            <img src={projectRef.current.img2} alt="project 1" />
-            <p>{projectRef.current.text3}</p>
+            <img src={projectRef.img2} alt="project 1" />
+            <p>{projectRef.text3}</p>
           </div>
           <div className="line4">
             <table className="btsTable">
@@ -152,8 +136,8 @@ function Project(props) {
                 </tr>
               </thead>
               <tbody>
-                {btsSkillsRef.current.map((skill) => (
-                  <tr>
+                {btsSkillsRef.map((skill) => (
+                  <tr key={skill.name}>
                     <td>{skill.name}</td>
                     <td>{skill.mission}</td>
                   </tr>

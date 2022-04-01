@@ -35,11 +35,7 @@ const ProjectItemStyles = styled.div`
   }
 `;
 
-function ProjectItem({
-  img = projectImg,
-  title = 'Project Name',
-  desc = 'lorem',
-}) {
+function ProjectItem({ img = projectImg, title = 'Project Name' }) {
   return (
     <ProjectItemStyles>
       <div className="projectItem__img">
@@ -48,7 +44,6 @@ function ProjectItem({
       </div>
       <div className="projectItem__info">
         <h3 className="projectItem__title">{title}</h3>
-        <p className="projectItem__desc">{desc}</p>
       </div>
     </ProjectItemStyles>
   );

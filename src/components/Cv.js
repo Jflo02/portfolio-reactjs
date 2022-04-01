@@ -17,7 +17,6 @@ function Cv() {
       <img src={cvPNG} alt="cv florimond" />
     </CvStyle>
   );
-  // return <div>THis is an image</div>;
 }
 
 export default Cv;
