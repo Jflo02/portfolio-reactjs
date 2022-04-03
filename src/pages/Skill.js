@@ -82,11 +82,6 @@ function Skills({ location }) {
 
   useEffect(setInLocalStorage);
 
-  const debug = () => {
-    console.log(
-      projects.filter((item) => item.name === 'Gestion hopital Symfony')[0]
-    );
-  };
   return (
     <SKillStyles>
       <div className="container">
@@ -107,56 +102,62 @@ function Skills({ location }) {
                     <h3>{skill.descriptionCompetence}</h3>
                   </div>
                 </div>
-                <div className="line">
-                  <div className="divImages">
-                    <PText>Compétence</PText>
-                    <Link
-                      to={{
-                        pathname: '/image',
-                        state: {
-                          img: skill.screenCompetence,
-                        },
-                      }}
-                      key="lalal"
-                    >
-                      <img src={skill.screenCompetence} alt="skill proof" />
-                    </Link>
-                  </div>
-
-                  <Link
-                    to={{
-                      pathname: '/project',
-                      state: projects.filter(
-                        (item) => item.name === skill.projectName
-                      )[0],
-                    }}
-                    key="lalal"
-                  >
+                {skill.screenCompetence && (
+                  <div className="line">
                     <div className="divImages">
-                      <PText>Projet</PText>
-                      <img
-                        src={
-                          projects.filter(
-                            (item) => item.name === skill.projectName
-                          )[0].img
-                        }
-                        alt="project link proof"
-                      />
+                      <PText>Compétence</PText>
+                      <Link
+                        to={{
+                          pathname: '/image',
+                          state: {
+                            img: skill.screenCompetence,
+                          },
+                        }}
+                        key="lalal"
+                      >
+                        <img src={skill.screenCompetence} alt="skill proof" />
+                      </Link>
                     </div>
-                  </Link>
-                </div>
+                    {skill.projectName && (
+                      <Link
+                        to={{
+                          pathname: '/project',
+                          state: projects.filter(
+                            (item) => item.name === skill.projectName
+                          )[0],
+                        }}
+                        key="lalal"
+                      >
+                        <div className="divImages">
+                          <PText>Projet</PText>
+                          <img
+                            src={
+                              projects.filter(
+                                (item) => item.name === skill.projectName
+                              )[0].img
+                            }
+                            alt="project link proof"
+                          />
+                        </div>
+                      </Link>
+                    )}
+                    {skill.lien && (
+                      <h3>
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          href={skill.lien.url}
+                        >
+                          {skill.lien.libelle}
+                        </a>
+                      </h3>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           ))}
         </div>
-        <button
-          type="button"
-          onClick={() => {
-            debug();
-          }}
-        >
-          DEBUG
-        </button>
       </div>
     </SKillStyles>
   );

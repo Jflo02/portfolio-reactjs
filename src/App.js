@@ -10,6 +10,8 @@ import Footer from './components/Footer';
 import ImageFullScreen from './components/ImageFullScreen';
 import Project from './pages/Project';
 import Cv from './components/Cv';
+import Certifications from './pages/Certifications';
+import Certification from './pages/Certification';
 
 export default function App() {
   return (
@@ -20,6 +22,10 @@ export default function App() {
           <Route path="/project" component={Project} />
           <Route path="/projects">
             <Projects />
+          </Route>
+          <Route path="/certification" component={Certification} />
+          <Route path="/certifications">
+            <Certifications />
           </Route>
           <Route path="/skill" component={Skill} />
           <Route path="/skills">

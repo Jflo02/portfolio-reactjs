@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import styled from 'styled-components';
@@ -84,11 +85,19 @@ function ProjectsSection() {
               if (index >= 5) return;
               return (
                 <SwiperSlide key={project.id}>
-                  <ProjectItem
-                    title={project.name}
-                    desc={project.desc}
-                    img={project.img}
-                  />
+                  <Link
+                    to={{
+                      pathname: '/project',
+                      state: project,
+                    }}
+                    key={`project${project.id}`}
+                  >
+                    <ProjectItem
+                      title={project.name}
+                      desc={project.desc}
+                      img={project.img}
+                    />
+                  </Link>
                 </SwiperSlide>
               );
             })}
