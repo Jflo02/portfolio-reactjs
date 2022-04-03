@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import cvPNG from '../assets/images/florimond_jaulin_cv.png';
 
@@ -14,7 +15,13 @@ const CvStyle = styled.div`
 function Cv() {
   return (
     <CvStyle>
-      <img src={cvPNG} alt="cv florimond" />
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.dropbox.com/s/1etsupztwvduoua/florimond_jaulin_cv.pdf?dl=0https://www.dropbox.com/s/1etsupztwvduoua/florimond_jaulin_cv.pdf?dl=0"
+      >
+        <img src={cvPNG} alt="cv florimond" />
+      </a>
     </CvStyle>
   );
 }
