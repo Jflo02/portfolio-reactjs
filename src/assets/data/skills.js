@@ -439,7 +439,7 @@ const skills = [
       screenCompetence: attestationCnil,
       lien: {
         libelle: 'Lien vers mon parcours de certifications',
-        url: '/',
+        url: '/certifications',
       },
     },
   ],

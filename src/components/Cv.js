@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import cvPNG from '../assets/images/florimond_jaulin_cv.png';
 

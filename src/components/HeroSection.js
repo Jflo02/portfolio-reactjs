@@ -159,10 +159,9 @@ function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              {' '}
               Actuellement en deuxième année de bachelor informatique à l'epsi
-              Lille, je suis à la recherche d'un stage en développement du 3
-              janvier au 18 février{' '}
+              Lille, je serai en alternance chez AXA France pour la rentrée
+              scolaire 2022
             </PText>
             <Button btnLink="/projects" btnText="see my work" />
           </div>

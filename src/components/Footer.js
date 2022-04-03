@@ -59,8 +59,9 @@ function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Florimond Jaulin</h1>
           <PText>
-            Actuellement en deuxième année d'informatique je suis à la recherche
-            d'une alternance pour septembre 2022
+            Actuellement en deuxième année de bachelor informatique à l'epsi
+            Lille, je serai en alternance chez AXA France pour la rentrée
+            scolaire 2022
           </PText>
         </div>
         <div className="footer__col2">
@@ -79,7 +80,7 @@ function Footer() {
               },
               {
                 title: 'Competences',
-                path: '/competences',
+                path: '/skills',
                 type: 'link',
               },
               {
@@ -92,12 +93,8 @@ function Footer() {
         </div>
         <div className="footer__col3">
           <FooterCol
-            heading="Important Links"
+            heading="Contact Me"
             links={[
-              {
-                title: '+33',
-                path: 'tel+33777',
-              },
               {
                 title: 'mail',
                 path: 'mailto:florimond.jaulin@epsi.fr',

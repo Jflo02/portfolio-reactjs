@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import useState from 'react-usestateref';
 import styled from 'styled-components';
 
@@ -58,16 +59,6 @@ const ProjectStyles = styled.div`
     flex-direction: row;
     justify-content: space-between;
   }
-  .btsTable {
-    margin: 1rem;
-    td {
-      padding: 1.5rem;
-      text-align: justify;
-    }
-    th {
-      padding-left: 3rem;
-    }
-  }
   @media only screen and (max-width: 768px) {
     margin-right: 2rem;
     margin-left: 1rem;
@@ -95,13 +86,13 @@ const ProjectStyles = styled.div`
 `;
 
 function Project({ location }) {
-  const [projectRef] = useState(
-    location.state || JSON.parse(localStorage.getItem('project'))
+  const [certificationRef] = useState(
+    location.state || JSON.parse(localStorage.getItem('certification'))
   );
 
   const setInLocalStorage = () => {
     if (location.state) {
-      localStorage.setItem('project', JSON.stringify(location.state));
+      localStorage.setItem('certification', JSON.stringify(location.state));
     }
   };
 
@@ -111,20 +102,23 @@ function Project({ location }) {
     <ProjectStyles>
       <div className="container">
         <div className="title">
-          <h1>{projectRef.name}</h1>
+          <h1>{certificationRef.name}</h1>
         </div>
-        <div className="description__generale">{projectRef.longDesc}</div>
+        <div className="description__generale">{certificationRef.longDesc}</div>
         <div className="corps">
           <div className="line1">
-            <p>{projectRef.text1}</p>
-            <img src={projectRef.img1} alt="project 1" />
-          </div>
-          <div className="line2">
-            <p>{projectRef.text2}</p>
-          </div>
-          <div className="line3">
-            <img src={projectRef.img2} alt="project 1" />
-            <p>{projectRef.text3}</p>
+            <p>{certificationRef.text1}</p>
+            <Link
+              to={{
+                pathname: '/image',
+                state: {
+                  img: certificationRef.img1,
+                },
+              }}
+              key="lalal"
+            >
+              <img src={certificationRef.img1} alt="project 1" />
+            </Link>
           </div>
         </div>
       </div>
