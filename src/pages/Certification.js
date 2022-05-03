@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { SRLWrapper } from 'simple-react-lightbox';
 import useState from 'react-usestateref';
 import styled from 'styled-components';
 
@@ -108,17 +108,9 @@ function Project({ location }) {
         <div className="corps">
           <div className="line1">
             <p>{certificationRef.text1}</p>
-            <Link
-              to={{
-                pathname: '/image',
-                state: {
-                  img: certificationRef.img1,
-                },
-              }}
-              key="lalal"
-            >
+            <SRLWrapper>
               <img src={certificationRef.img1} alt="project 1" />
-            </Link>
+            </SRLWrapper>
           </div>
         </div>
       </div>
