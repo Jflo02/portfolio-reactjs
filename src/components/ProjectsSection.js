@@ -60,7 +60,7 @@ function ProjectsSection() {
   return (
     <ProjectSectionStyle>
       <div className="container">
-        <SectionTitle heading="Projects" subheading="some of my recent works" />
+        <SectionTitle heading="Projets" subheading="Quelques récents" />
         <div className="projects__allItems">
           <Swiper
             spaceBetween={30}

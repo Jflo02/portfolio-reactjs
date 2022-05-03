@@ -59,14 +59,14 @@ function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Florimond Jaulin</h1>
           <PText>
-            Actuellement en deuxième année de bachelor informatique à l'epsi
+            Actuellement en deuxième année de bachelor informatique à l'EPSI
             Lille, je serai en alternance chez AXA France pour la rentrée
             scolaire 2022
           </PText>
         </div>
         <div className="footer__col2">
           <FooterCol
-            heading="Important Links"
+            heading="Liens importants"
             links={[
               {
                 title: 'Home',
@@ -93,10 +93,10 @@ function Footer() {
         </div>
         <div className="footer__col3">
           <FooterCol
-            heading="Contact Me"
+            heading="Me Contacter"
             links={[
               {
-                title: 'mail',
+                title: 'Mail',
                 path: 'mailto:florimond.jaulin@epsi.fr',
               },
             ]}
@@ -104,7 +104,7 @@ function Footer() {
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="Social Links"
+            heading="Réseaux sociaux"
             links={[
               {
                 title: 'LinkedIn',

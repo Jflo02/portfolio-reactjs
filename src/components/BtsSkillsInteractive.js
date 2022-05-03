@@ -137,6 +137,16 @@ const BtsSkillsInteractiveStyle = styled.div`
             .vert {
               background-color: green;
               border-bottom: 3px solid var(--gray-2);
+              &:hover {
+                border: 1px solid gray;
+                filter: brightness(130%);
+                -webkit-filter: brightness(130%);
+                -moz-filter: brightness(130%);
+                -o-filter: brightness(130%);
+                -ms-filter: brightness(130%);
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+              }
             }
             .red {
               background-color: red;

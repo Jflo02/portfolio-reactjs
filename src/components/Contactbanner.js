@@ -26,7 +26,7 @@ function ContactBanner() {
     <ContactBannerStyles>
       <div className="container">
         <div className="contactBanner__wrapper">
-          <Button btnText="Contact Now" btnLink="/contact" />
+          <Button btnText="Contact" btnLink="/contact" />
         </div>
       </div>
     </ContactBannerStyles>

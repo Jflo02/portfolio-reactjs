@@ -35,7 +35,7 @@ const ProjectItemStyles = styled.div`
   }
 `;
 
-function ProjectItem({ img = projectImg, title = 'Project Name' }) {
+function ProjectItem({ img = projectImg, title = 'Projet' }) {
   return (
     <ProjectItemStyles>
       <div className="projectItem__img">

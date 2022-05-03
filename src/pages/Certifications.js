@@ -68,10 +68,7 @@ function Certifications() {
   return (
     <CertificationsStyles>
       <div className="container">
-        <SectionTitle
-          heading="certifications"
-          subheading="some of my certifications"
-        />
+        <SectionTitle heading="certifications" subheading="Mes" />
         <div className="certifications__searchBar">
           <form>
             <input

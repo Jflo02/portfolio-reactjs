@@ -72,8 +72,8 @@ function SkillsSection() {
       <div className="container">
         <div className="skillsSection__left">
           <SectionTitle
-            subheading="Let me show you my competences"
-            heading="About my skills"
+            subheading="Laissez moi vous montrer"
+            heading="Mes compétences"
           />
           <PText>
             Je suis à l'aise dans le développement web avec les technologies

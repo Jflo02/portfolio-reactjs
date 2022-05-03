@@ -151,7 +151,6 @@ function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>Hello this is </span>
             <span className="hero__name">Florimond JAULIN</span>
           </h1>
           <div className="hero__img">
@@ -159,11 +158,11 @@ function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              Actuellement en deuxième année de bachelor informatique à l'epsi
+              Actuellement en deuxième année de bachelor informatique à l'EPSI
               Lille, je serai en alternance chez AXA France pour la rentrée
               scolaire 2022
             </PText>
-            <Button btnLink="/projects" btnText="see my work" />
+            <Button btnLink="/projects" btnText="Mes projets" />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">

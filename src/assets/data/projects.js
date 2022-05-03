@@ -15,14 +15,14 @@ const projects = [
       "Application de gestion d'un hopital réalisé avec Symfony 5 et react.js",
     img: Symfony,
     longDesc:
-      "Dans le cadre de l'épreuve E5 j'ai réalisé une application de gestion d'hopital. J'ai pu avec mon équipe " +
+      "Dans le cadre de l'épreuve E5 j'ai réalisé une application de gestion d'hôpital. J'ai pu avec mon équipe " +
       "penser à la conception de l'application en utilisant des diagrammes de classe et états-transition ainsi qu'un " +
-      "MLD. J'ai développé la partie backend de l'application sous symfony 5 relié à une base de données Mysql hébergé " +
+      "MLD. J'ai développé la partie backend de l'application sous symfony 5 relié à une base de données Mysql hébergée " +
       'sur un vps distant et conteneurisé avec docker.',
     img1: symfonyPatientsPage,
     img2: Symfony,
     text1:
-      "Nous avons réalisé la partie de frontend de l'aplicaiton avec le framework React.js",
+      "Nous avons réalisé la partie de frontend de l'application avec le framework React.js",
     text2: '',
     text3: '',
   },
@@ -33,7 +33,7 @@ const projects = [
     img: ReactJS,
     longDesc:
       "Dans le cadre de l'épreuve E4 j'ai développé mon portfolio en utilisant le framework React.js. J'ai choisi de le développer " +
-      "moi même en utilisant cette technologie afin de renforcer les compétences que j'ai pu développer pendant mon stage de première année",
+      "moi-même en utilisant cette technologie afin de renforcer les compétences que j'ai pu acquérir pendant mon stage de première année",
     img1: portfolio1,
     img2: portfolio2,
     text1: '',

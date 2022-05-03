@@ -1,4 +1,7 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/no-this-in-sfc */
 import React, { useEffect } from 'react';
+import { SRLWrapper } from 'simple-react-lightbox';
 import useState from 'react-usestateref';
 import styled from 'styled-components';
 
@@ -39,6 +42,11 @@ const ProjectStyles = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    div {
+      max-width: 50%;
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   .line2 {
     width: 100%;
@@ -58,6 +66,7 @@ const ProjectStyles = styled.div`
     flex-direction: row;
     justify-content: space-between;
   }
+
   .btsTable {
     margin: 1rem;
     td {
@@ -117,13 +126,17 @@ function Project({ location }) {
         <div className="corps">
           <div className="line1">
             <p>{projectRef.text1}</p>
-            <img src={projectRef.img1} alt="project 1" />
+            <SRLWrapper>
+              <img src={projectRef.img1} alt="project 1" />
+            </SRLWrapper>
           </div>
           <div className="line2">
             <p>{projectRef.text2}</p>
           </div>
           <div className="line3">
-            <img src={projectRef.img2} alt="project 1" />
+            <SRLWrapper>
+              <img src={projectRef.img2} alt="project 1" />
+            </SRLWrapper>
             <p>{projectRef.text3}</p>
           </div>
         </div>

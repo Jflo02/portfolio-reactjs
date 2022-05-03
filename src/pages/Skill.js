@@ -1,5 +1,8 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/no-this-in-sfc */
 import { React, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { SRLWrapper } from 'simple-react-lightbox';
 import styled from 'styled-components';
 import projects from '../assets/data/projects';
 import PText from '../components/PText';
@@ -106,17 +109,9 @@ function Skills({ location }) {
                   <div className="line">
                     <div className="divImages">
                       <PText>Compétence</PText>
-                      <Link
-                        to={{
-                          pathname: '/image',
-                          state: {
-                            img: skill.screenCompetence,
-                          },
-                        }}
-                        key="lalal"
-                      >
+                      <SRLWrapper>
                         <img src={skill.screenCompetence} alt="skill proof" />
-                      </Link>
+                      </SRLWrapper>
                     </div>
                     {skill.projectName && (
                       <Link

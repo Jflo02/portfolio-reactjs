@@ -68,14 +68,14 @@ function Projects() {
   return (
     <ProjectsStyles>
       <div className="container">
-        <SectionTitle heading="Projects" subheading="some of my projects" />
+        <SectionTitle heading="Projets" subheading="Mes" />
         <div className="projects__searchBar">
           <form>
             <input
               type="text"
               value={searchText}
               onChange={handleChange}
-              placeholder="Project Name"
+              placeholder="Projet"
             />
             <MdSearch className="searchIcon" />
           </form>
