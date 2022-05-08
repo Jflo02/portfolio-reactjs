@@ -38,6 +38,9 @@ const SKillStyles = styled.div`
         margin-left: 6rem;
       }
     }
+    .skillLien {
+      margin-left: 30px;
+    }
     .text {
       width: 100%;
       display: flex;
@@ -137,7 +140,7 @@ function Skills({ location }) {
                       </Link>
                     )}
                     {skill.lien && (
-                      <h3>
+                      <h3 className="skillLien">
                         <a
                           target="_blank"
                           rel="noreferrer"

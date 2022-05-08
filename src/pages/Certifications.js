@@ -75,7 +75,7 @@ function Certifications() {
               type="text"
               value={searchText}
               onChange={handleChange}
-              placeholder="Certification Name"
+              placeholder="Certification"
             />
             <MdSearch className="searchIcon" />
           </form>

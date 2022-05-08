@@ -3,6 +3,7 @@ import symfonyLinkedin from '../images/certifications/symfonyLinkedin.png';
 import dockerUdemy from '../images/certifications/dockerUdemy.png';
 import gitUdemy from '../images/certifications/gitUdemy.png';
 import openClassroom from '../images/certifications/openClassroom.png';
+import attestationCnil from '../images/project/attestationCnil.png';
 
 const projects = [
   {
@@ -47,6 +48,15 @@ const projects = [
   },
   {
     id: uuidv4(),
+    name: 'RGPD',
+    img: attestationCnil,
+    longDesc: "J'ai suivi le mooc de la CNIL concernant le RGPD ",
+
+    img1: attestationCnil,
+    text1: 'Diplôme attestant ma formation',
+  },
+  {
+    id: uuidv4(),
     name: 'Autres',
     img: openClassroom,
     longDesc:
@@ -55,7 +65,7 @@ const projects = [
       "année (développeur fullstack javascript), j'ai vu des concepts pour mon stage de première année ou " +
       "alors je me suis simplement formé sur des technologies qui m'intéressaient.",
     img1: openClassroom,
-    text1: 'Diplôme attestant ma formation',
+    text1: 'Différentes formations réalisées sur openClassroom',
   },
 ];
 
