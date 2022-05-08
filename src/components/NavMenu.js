@@ -133,7 +133,7 @@ export default function NavMenu() {
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
           >
-            Home
+            Accueil
           </NavLink>
         </li>
         <li>
@@ -144,7 +144,7 @@ export default function NavMenu() {
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
           >
-            Projects
+            Projets
           </NavLink>
         </li>
         <li>

@@ -29,7 +29,7 @@ const BtsSkillsInteractiveStyle = styled.div`
         display: flex;
         justify-content: center;
         align-items: stretch;
-        //border: 1px solid red;
+        //border: 1px solid grey;
 
         .items {
           display: flex;
@@ -45,7 +45,7 @@ const BtsSkillsInteractiveStyle = styled.div`
             height: 100%;
             //border: 1px solid yellow;
 
-            //border: 1px solid red;
+            //border: 1px solid grey;
             span {
               margin: auto;
               align-items: center;
@@ -118,7 +118,6 @@ const BtsSkillsInteractiveStyle = styled.div`
           display: flex;
           justify-content: space-evenly;
           align-items: stretch;
-          //border: 1px solid red;
 
           .items {
             display: flex;
@@ -134,7 +133,7 @@ const BtsSkillsInteractiveStyle = styled.div`
               display: flex;
               align-items: center;
             }
-            .vert {
+            .green {
               background-color: green;
               border-bottom: 3px solid var(--gray-2);
               &:hover {
@@ -148,8 +147,8 @@ const BtsSkillsInteractiveStyle = styled.div`
                 transition: all 0.5s;
               }
             }
-            .red {
-              background-color: red;
+            .grey {
+              background-color: grey;
               border-bottom: 3px solid var(--gray-2);
             }
             a,
@@ -212,7 +211,7 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[0],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
                 <Link
                   to={{
@@ -220,7 +219,7 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[1],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
                 <Link
                   to={{
@@ -228,7 +227,7 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[2],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
               </div>
             </div>
@@ -256,9 +255,9 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[3],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
-                <a className="red">
+                <a className="grey">
                   <div className="stagedeux" />
                 </a>
                 <Link
@@ -267,7 +266,7 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[5],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
               </div>
             </div>
@@ -289,20 +288,30 @@ function BtsSkillsInteractive() {
                   données de l’organisation.
                   <br />
                 </p>
-                <a className="red">
-                  <div className="cours" />
-                </a>
+                <Link
+                  to={{
+                    pathname: '/skill',
+                    state: skillsInfo[6],
+                  }}
+                  key="lal"
+                  className="green"
+                />
                 <Link
                   to={{
                     pathname: '/skill',
                     state: skillsInfo[7],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
-                <a className="red">
-                  <div className="stagedeux" />
-                </a>
+                <Link
+                  to={{
+                    pathname: '/skill',
+                    state: skillsInfo[8],
+                  }}
+                  key="lal"
+                  className="green"
+                />
               </div>
             </div>
           </div>
@@ -327,18 +336,23 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[9],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
-                <a className="red">
-                  <div className="stageun" />
-                </a>
+                <Link
+                  to={{
+                    pathname: '/skill',
+                    state: skillsInfo[10],
+                  }}
+                  key="lal"
+                  className="green"
+                />
                 <Link
                   to={{
                     pathname: '/skill',
                     state: skillsInfo[11],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
               </div>
             </div>
@@ -366,7 +380,7 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[12],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
                 <Link
                   to={{
@@ -374,7 +388,7 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[13],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
                 <Link
                   to={{
@@ -382,7 +396,7 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[14],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
               </div>
             </div>
@@ -408,14 +422,24 @@ function BtsSkillsInteractive() {
                     state: skillsInfo[15],
                   }}
                   key="lal"
-                  className="vert"
+                  className="green"
                 />
-                <a className="red">
-                  <div className="stageun" />
-                </a>
-                <a className="red">
-                  <div className="stagedeux" />
-                </a>
+                <Link
+                  to={{
+                    pathname: '/skill',
+                    state: skillsInfo[16],
+                  }}
+                  key="lal"
+                  className="green"
+                />
+                <Link
+                  to={{
+                    pathname: '/skill',
+                    state: skillsInfo[17],
+                  }}
+                  key="lal"
+                  className="green"
+                />
               </div>
             </div>
           </div>

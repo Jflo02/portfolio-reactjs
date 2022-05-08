@@ -6,6 +6,9 @@ import portfolio1 from '../images/project/portfolio1.png';
 import portfolio2 from '../images/project/portfolio2.png';
 import medilabReseau from '../images/project/medilab/reseau.png';
 import medilabZabbix from '../images/project/medilab/zabbix-global-view.png';
+import campingLogo from '../images/camping-logo.png';
+import campingHomepage from '../images/camping-homepage.png';
+import mcdCamping from '../images/mcd-camping.png';
 
 const projects = [
   {
@@ -58,6 +61,26 @@ const projects = [
     text1: '',
     text2: '',
     text3: '',
+  },
+  {
+    id: uuidv4(),
+    name: "Gestion d'un camping en php",
+    shortDesc: '',
+    img: campingLogo,
+    longDesc:
+      "Dans le cadre d'un projet transversal de première " +
+      ' année nous avons créé une application web permettant de gérer un camping. ' +
+      'Nous avons utilisé php, mysql html et css. Nous avons réalisé une maquette de type Wireframe pour ' +
+      "concevoir l'interface du site ainsi qu'un MCD pour concevoir la base de données. " +
+      "L'application possède deux types de comptes, les clients qui peuvent d'inscrire et réserver des séjours et les administrateurs. " +
+      'Les administrateurs ont accès aux CRUD de plusieurs ressources tel que les clients et les chalets.' +
+      '',
+    img1: campingHomepage,
+    img2: mcdCamping,
+
+    text1: "Page d'accueil du site",
+    text2: '',
+    text3: 'MCD',
   },
 ];
 

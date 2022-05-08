@@ -22,8 +22,15 @@ import vsCodeExtensions from '../images/project/vsCodeExtensions.png';
 import laragon from '../images/project/laragon.png';
 import feedly from '../images/project/feedly.png';
 import linkedInWorkshop from '../images/project/linkedInWorkshop.png';
-import attestationCnil from '../images/project/attestationCnil.png';
 import hopitalReadme from '../images/project/symfony-hopital/hopitalReadme.png';
+import mcdCamping from '../images/mcd-camping.png';
+import wireFrameCamping from '../images/WireFrameCamping.svg';
+import noteCamping from '../images/noteCamping.png';
+import gantTailor from '../images/gantTailor.png';
+import usersTailor from '../images/usersTailor.png';
+import tailorJWT from '../images/tailorJWT.png';
+import dockerUdemy from '../images/certifications/dockerUdemy.png';
+import mpsaWithBubbles from '../images/mpsaWithBubbles.png';
 
 const skills = [
   [
@@ -71,6 +78,23 @@ const skills = [
       id: uuidv4(),
       nomDomaine: 'Gérer le patrimoine informatique',
       idee:
+        'Mettre en place et vérifier les niveaux d’habilitation associés à un service',
+      descriptionCompetence:
+        `Dans le cadre du projet transversal 'Développement d'un application Web' ` +
+        `nous avons créé une distinction entre les comptes utilisateurs et administrateurs. Les utilisateurs peuvent d'inscrire et réserver des séjours alors que les administrateurs ` +
+        `ont accès aux CRUD de plusieurs ressources tel que les clients et les chalets`,
+      screenCompetence: mcdCamping,
+      projectName: "Gestion d'un camping en php",
+      lien: {
+        libelle: 'Compte rendu du projet',
+        url:
+          'https://www.dropbox.com/s/kpf4771vsrgvdso/projet_camping.pdf?dl=0',
+      },
+    },
+    {
+      id: uuidv4(),
+      nomDomaine: 'Gérer le patrimoine informatique',
+      idee:
         'Recenser et identifier les ressources numériques. ' +
         'Vérifier les conditions de la continuité d’un service informatique',
       descriptionCompetence:
@@ -102,6 +126,32 @@ const skills = [
         `Pour développer from scratch un Saas j'ai utilisé du versionning à l'aide de git. ` +
         `J'ai également utilisé la plateforme GitLab afin de sauvegarder le code source dans un dépôt privé.`,
       screenCompetence: gitTailor,
+    },
+    {
+      id: uuidv4(),
+      nomDomaine: 'Gérer le patrimoine informatique',
+      idee:
+        'Mettre en place et vérifier les niveaux d’habilitation associés à un service',
+      descriptionCompetence:
+        `J'ai réalisé en base de données une distinction entre les utilisateurs. ` +
+        `J'ai développé la partie concernant les équipes j'ai donc créé un 'rôle' manager et un 'rôle' collaborateur. ` +
+        `Le manager a beaucoup plus de droits et peut par exemple gérer son équipe (ajouter, retirer des collaborateurs)`,
+      screenCompetence: usersTailor,
+    },
+    {
+      id: uuidv4(),
+      nomDomaine: 'Gérer le patrimoine informatique',
+      idee:
+        'Mettre en place et vérifier les niveaux d’habilitation associés à un service',
+      descriptionCompetence:
+        `J'utilisais une api pour communiquer du front vers le back de l'application. ` +
+        `Afin d'éviter qu'une personne n'accède à certaines informations sensibles auxquelles elle n'aurait pas accès ` +
+        `j'ai mis en place une sécurisation sur l'api. Il faut que la requête contienne en en-tête un jeton de type JWT. ` +
+        `Ce jeton est fourni par le serveur quand on se connecte avec un couple d'identifiants corrects. ` +
+        `Ce jeton possède plusieurs informations comme le rôle de l'utilisateur. Ainsi on peut filtrer certaines ressources en ` +
+        `fonction de son statut (administrateur, candidat, manager). Un candidat ne doit pas être autorisé à récupérer ` +
+        `la liste des collaborateurs de l'entreprise par exemple.`,
+      screenCompetence: tailorJWT,
     },
   ],
   [
@@ -176,7 +226,26 @@ const skills = [
       screenCompetence: axaUs,
     },
   ],
-  [],
+  [
+    {
+      id: uuidv4(),
+      nomDomaine: 'Développer la présence en ligne de l’organisation',
+      idee:
+        'Participer à l’évolution d’un site Web exploitant les données de l’organisation.',
+      descriptionCompetence:
+        `Dans le cadre du projet transversal 'Développement d'un application Web' ` +
+        `nous avons rélisé une maquette de l'application web de type wireframe. ` +
+        `Cela nous a permis de concevoir l'architecture de l'application et le design du site. ` +
+        `Toutes les parties vertes sont accessibles et visibles uniquement par un administrateur.  `,
+      screenCompetence: wireFrameCamping,
+      projectName: "Gestion d'un camping en php",
+      lien: {
+        libelle: 'Lien vers le compte rendu du projet',
+        url:
+          'https://www.dropbox.com/s/kpf4771vsrgvdso/projet_camping.pdf?dl=0',
+      },
+    },
+  ],
   [
     {
       id: uuidv4(),
@@ -197,7 +266,27 @@ const skills = [
       },
     },
   ],
-  [],
+  [
+    {
+      id: uuidv4(),
+      nomDomaine: 'Développer la présence en ligne de l’organisation',
+      idee:
+        'Participer à l’évolution d’un site Web exploitant les données de l’organisation.',
+      descriptionCompetence:
+        `J'ai eu pour mission de rajouter des bulles d'aide pour faciliter l'utilisation du service. ` +
+        `On m'a laissé le choix concernant la méthode d'implémentation, parmi les options serieuses il y avait l'affichage de ` +
+        `la bulle au survol d'une case mais cela aurait donné un effet guirlande de noël selon moi. ` +
+        `J'ai donc opté pour l'ajout d'un logo 'i' d'information en dessous du logo d'édition. Au survol du 'i' la bulle d'aide s'affiche. ` +
+        `J'ai respecté les données de l'organisation en utilisant des couleurs faisant partie de la charte graphique. ` +
+        `Ce système a été validé par le PO avant d'être ajouté au code source. Elle respecte donc les standards.`,
+      screenCompetence: mpsaWithBubbles,
+      lien: {
+        libelle: 'Document avant / après ajout',
+        url:
+          'https://www.dropbox.com/s/6p27by7s2wh243k/EvolutionSiteWebMPSA.pdf?dl=0',
+      },
+    },
+  ],
   [
     {
       id: uuidv4(),
@@ -208,6 +297,7 @@ const skills = [
         `Il fallait réaliser la partie backend de l'application en Symfony dont une api, la base de données et la partie frontend. ` +
         `Pour ce faire nous avons suivi la méthode kanban et réalisé un tableau avec l'outil Trello`,
       screenCompetence: SymfonyTrello,
+      projectName: 'Gestion hopital Symfony',
       lien: {
         libelle: 'Lien vers le rendu du projet',
         url:
@@ -246,7 +336,16 @@ const skills = [
       screenCompetence: projetDiagrammeGant,
     },
   ],
-  [],
+  [
+    {
+      id: uuidv4(),
+      nomDomaine: 'Travailler en mode projet',
+      idee:
+        'Analyser les objectifs et les modalités d’organisation d’un projet. Planifier les activités',
+      descriptionCompetence: `J'ai réalisé un diagramme de Gant afin d'organiser mes 9 semaines de stage. `,
+      screenCompetence: gantTailor,
+    },
+  ],
   [
     {
       id: uuidv4(),
@@ -321,6 +420,24 @@ const skills = [
       lien: {
         libelle: 'Lien vers le github du projet',
         url: 'https://github.com/Jflo02/SymfonyBtsProject',
+      },
+    },
+    {
+      id: uuidv4(),
+      nomDomaine:
+        'Mettre à disposition des utilisateurs un service informatique',
+      idee: 'Accompagner les utilisateurs dans la mise en place d’un service',
+      descriptionCompetence:
+        `Dans le cadre du projet transversal 'Développement d'un application Web' nous avons créé une ` +
+        `note technique permettant à une personne de lancer et utiliser l'application. ` +
+        `Elle indique les champs à modifier pour connecter l'application avec une base de données ainsi ` +
+        `que les identifiants du compte administrateur.`,
+      screenCompetence: noteCamping,
+      projectName: "Gestion d'un camping en php",
+      lien: {
+        libelle: 'Lien vers le compte rendu du projet',
+        url:
+          'https://www.dropbox.com/s/kpf4771vsrgvdso/projet_camping.pdf?dl=0',
       },
     },
   ],
@@ -436,11 +553,39 @@ const skills = [
         `J'ai également acquis des compétences moins techniques concernant le RGPD entre autres. ` +
         `J'ai créé une section dédiée aux certifications et aux compétencess que j'ai pu acquérir. `,
 
-      screenCompetence: attestationCnil,
+      screenCompetence: dockerUdemy,
       lien: {
         libelle: 'Lien vers mon parcours de certifications',
         url: '/certifications',
       },
+    },
+  ],
+  [
+    {
+      id: uuidv4(),
+      nomDomaine: 'Organiser son développement professionnel',
+      idee: 'Mettre en place son environnement d’apprentissage personnel',
+      descriptionCompetence:
+        `Lors de mon stage j'ai utilisé mon ordinateur personnel. ` +
+        `J'ai utilisé des technologies nouvelles qui ont nécessité l'installation et la configuration de divers programmes. ` +
+        `J'ai entres autre installé PHP 8.0 alors que j'avais PHP 7.4 sur mon poste. J'ai installé Node car j'ai travaillé ` +
+        `avec React.js et Node.js pour la première fois. J'ai également installé Docker. ` +
+        `Enfin j'ai installé le logiciel GantProject qui m'a permis d'apprendre à réaliser un ` +
+        `diagramme de Gant et de planifier mes tâches.`,
+      screenCompetence: gantTailor,
+    },
+  ],
+  [
+    {
+      id: uuidv4(),
+      nomDomaine: 'Organiser son développement professionnel',
+      idee: 'Mettre en place son environnement d’apprentissage personnel',
+      descriptionCompetence:
+        `Lors de mon stage j'ai utilisé un ordinateur fourni par mon entreprise. ` +
+        `Je l'ai récupéré sans logiciels installés pour développer. J'ai installé et configuré des logiciels et ` +
+        `extensions afin de mettre en place mon environnement de développement. ` +
+        `J'ai entre autres installé node version 14, postMan pour tester des requêtes api, un émulateur ` +
+        `CosmosDB pour travailler avec une base de données en local.`,
     },
   ],
 ];
